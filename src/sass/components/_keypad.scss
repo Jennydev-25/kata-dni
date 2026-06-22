@@ -3,39 +3,51 @@
 .keypad {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: v.$spacing-xs;
-    width: 100%;
+    gap: 0.55rem;
 
     &__key {
-        padding: v.$spacing-sm;
-        border: 1px solid rgba(247, 223, 30, 0.3);
+        border: none;
+        border-radius: v.$border-radius-md;
+        font-family: v.$font-primary;
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding: 0.8rem 0;
+        cursor: pointer;
         color: v.$color-white;
-        font-size: 1.2rem;
-        transition: background-color 0.15s ease;
+        background: v.$color-key-bg;
+        transition: background 0.12s, transform 0.08s;
 
         &:hover {
-            background-color: rgba(247, 223, 30, 0.1);
+            filter: brightness(1.18);
         }
 
-        &:active {
-            background-color: rgba(100, 149, 237, 0.5);
+        &--active {
+            background: v.$color-key-active;
+            color: v.$color-white;
+            transform: scale(0.95);
         }
 
         &--zero {
-            grid-column: span 2;
+            grid-column: span 3;
         }
 
         &--delete {
-            background-color: v.$color-delete-bg;
+            grid-column: span 3;
+            background: v.$color-delete-bg;
             color: v.$color-delete-text;
-            border-color: v.$color-delete-bg;
+            font-weight: 600;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: v.$spacing-xs;
 
             &:hover {
-                background-color: #1e1a16;
+                background: v.$color-delete-hover;
+            }
+
+            &.keypad__key--active {
+                background: v.$color-key-active;
+                color: v.$color-white;
             }
         }
     }
