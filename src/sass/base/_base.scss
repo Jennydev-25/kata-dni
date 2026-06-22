@@ -1,6 +1,5 @@
 @use '../abstracts/variables' as v;
 
-// Reset y estilos globales
 * {
     margin: 0;
     padding: 0;
@@ -8,20 +7,20 @@
 }
 
 body {
-    background: #1a1a1a;
+    background: v.$color-bg-page;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem 1rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: v.$font-primary;
 }
 
 button {
     cursor: pointer;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: v.$font-primary;
 }
 
 input {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: v.$font-primary;
 }

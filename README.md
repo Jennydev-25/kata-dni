@@ -220,6 +220,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `style`: update header styles
 - `style`: update start screen styles and add description paragraph
 - `style`: refactor sass partials to remove hardcoded values
+- `refactor`: use variables in base styles
 
 </details>
 
