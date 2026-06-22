@@ -17,7 +17,9 @@
   "scripts": {
     "test": "vitest run",
     "test-w": "vitest",
-    "test-cover": "vitest run --coverage"
+    "test-cover": "vitest run --coverage",
+    "sass": "sass src/sass/styles.scss src/css/styles.css",
+    "sass-w": "sass --watch src/sass/styles.scss src/css/styles.css"
   },
   "devDependencies": {
     "jsdom": "^29.1.1",
