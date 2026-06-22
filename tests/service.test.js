@@ -31,4 +31,10 @@ describe('calculateLetter', () => {
         const result = calculateLetter(value)
         expect(result).toBe('El dato introducido es incorrecto')
     })
+
+    test('Debería devolver la letra correcta para cualquier número válido', () => {
+        const number = 99999999
+        const result = calculateLetter(number)
+        expect(result).toBe('R')
+    })
 })
