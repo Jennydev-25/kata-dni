@@ -1,5 +1,9 @@
 // Colores
+$color-bg-page: #1a1a1a;
 $color-background: #222222;
+$color-checker-bg: #2e2e2e;
+$color-result-bg: #1a1a2e;
+$color-key-bg: #3a3a3a;
 $color-accent: #F7DF1E;
 $color-accent-pale: rgba(247, 223, 30, 0.55);
 $color-result: #a78bfa;
@@ -7,9 +11,20 @@ $color-delete-bg: #2e2620;
 $color-delete-text: #e0935c;
 $color-cancel: #ff4444;
 $color-white: #ffffff;
+$color-text-muted: #bbbbbb;
+$color-text-dim: #999999;
+
+// Chips
+$color-chip-number-bg: #332e00;
+$color-chip-op-bg: #252525;
+$color-chip-op-text: #aaaaaa;
+$color-chip-arrow-text: #666666;
+$color-chip-resto-bg: #252540;
+$color-chip-resto-text: #cccccc;
+$color-chip-result-bg: #221a40;
 
 // Tipografia
-$font-primary: 'Space Mono', 'Courier New', monospace;
+$font-primary: 'Courier New', Courier, monospace;
 
 // Espaciado
 $spacing-xs: 0.5rem;
