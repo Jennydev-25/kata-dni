@@ -178,7 +178,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `feat`: add negative number validation to calculateLetter
 - `refactor`: merge range validations into single condition
 - `test`: add test for non-numeric input returns error message
-- 
+- `feat`: add type validation to calculateLetter
 - 
 - 
 
