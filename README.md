@@ -182,6 +182,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `refactor`: merge all validations into single condition
 - `test`: add test for upper boundary returns correct letter
 - `feat`: implement calculateLetter with modulo 23 algorithm
+- `refactor`: extract letters array to module constant
 - 
 
 
