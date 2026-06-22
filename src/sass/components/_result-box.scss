@@ -1,49 +1,133 @@
 @use '../abstracts/variables' as v;
 
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    70% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .result-box {
-    width: 100%;
-    min-height: 80px;
+    border-radius: v.$border-radius-md;
+    background: v.$color-result-bg;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: v.$spacing-xs;
-    padding: v.$spacing-sm;
-    border: 1px solid rgba(247, 223, 30, 0.2);
-    text-align: center;
+    gap: 1.25rem;
+    padding: 1.75rem v.$spacing-sm;
+    margin-bottom: 1.25rem;
 
     &__letter {
-        font-size: 4rem;
+        font-size: 7rem;
+        font-weight: bold;
         color: v.$color-result;
-        font-weight: 700;
+        line-height: 1;
+        animation: popIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
     }
 
     &__chips {
         display: flex;
         align-items: center;
         gap: v.$spacing-xs;
+        animation: fadeUp 0.3s 0.15s ease forwards;
+        opacity: 0;
         flex-wrap: wrap;
         justify-content: center;
     }
 
     &__chip {
-        padding: 0.2rem v.$spacing-xs;
-        border: 1px solid v.$color-accent;
-        color: v.$color-accent;
-        font-size: 0.8rem;
+        border-radius: v.$border-radius-sm;
+        padding: 0.35rem 0.8rem;
+        font-size: 0.9rem;
+        white-space: nowrap;
+
+        &--number {
+            background: v.$color-chip-number-bg;
+            color: v.$color-accent;
+        }
+
+        &--op {
+            background: v.$color-chip-op-bg;
+            color: v.$color-chip-op-text;
+        }
+
+        &--arrow {
+            background: v.$color-chip-op-bg;
+            color: v.$color-chip-arrow-text;
+        }
+
+        &--resto {
+            background: v.$color-chip-resto-bg;
+            color: v.$color-chip-resto-text;
+        }
+
+        &--result {
+            background: v.$color-chip-result-bg;
+            color: v.$color-result;
+            font-weight: bold;
+            font-size: v.$spacing-sm;
+        }
     }
 
-    &__arrow {
-        color: v.$color-accent;
+    &__placeholder {
+        font-size: 0.85rem;
+        color: v.$color-disabled-bg;
+        animation: fadeIn 0.3s ease forwards;
     }
 
     &__error {
+        font-size: 0.95rem;
         color: v.$color-cancel;
-        font-size: 0.9rem;
+        text-align: center;
+        animation: fadeIn 0.3s ease forwards;
     }
 
-    &__message {
-        color: rgba(247, 223, 30, 0.6);
-        font-size: 0.9rem;
+    &__cancelled {
+        text-align: center;
+        animation: fadeIn 0.4s ease forwards;
+
+        p {
+            font-size: v.$spacing-sm;
+            color: v.$color-text-cancelled;
+            margin: 0 0 0.35rem;
+        }
+
+        span {
+            font-size: 0.8rem;
+            color: v.$color-text-disabled;
+        }
     }
 }

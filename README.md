@@ -224,7 +224,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `refactor`: use variables in header styles
 - `refactor`: use variables in start screen styles
 - `refactor`: use variables in checker styles
-- `refactor`:
+- `refactor`: use variables in result box styles
 - `refactor`:
 - `refactor`:
 
