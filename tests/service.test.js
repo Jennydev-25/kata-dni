@@ -13,4 +13,10 @@ describe('calculateLetter', () => {
         const result = calculateLetter(number)
         expect(result).toBe('T')
     })
+
+    test('Debería devolver un mensaje de error si el número está fuera de rango', () => {
+        const number = 100000000
+        const result = calculateLetter(number)
+        expect(result).toBe('El dato introducido es incorrecto')
+    })
 })

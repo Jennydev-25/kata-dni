@@ -172,7 +172,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `feat`: implement calculateLetter returns hardcoded letter
 - `test`: add test for lower boundary returns correct letter
 - `feat`: implement calculateLetter with if for boundary case
-- 
+- `test`: add test for out of range number returns error message
 - 
 - 
 - 
