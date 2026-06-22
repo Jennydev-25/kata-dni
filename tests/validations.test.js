@@ -33,4 +33,10 @@ describe('isValidRange', () => {
         const result = isValidRange(number)
         expect(result).toBe(false)
     })
+
+    test('Debería devolver false si el número es negativo', () => {
+        const number = -1
+        const result = isValidRange(number)
+        expect(result).toBe(false)
+    })
 })
