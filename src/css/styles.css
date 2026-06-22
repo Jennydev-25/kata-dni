@@ -25,4 +25,22 @@ input {
   font-family: "Space Mono", "Courier New", monospace;
 }
 
+.header {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid #F7DF1E;
+}
+.header__title {
+  font-size: 1.5rem;
+  color: #F7DF1E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.header__title .material-icons {
+  font-size: 2rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
