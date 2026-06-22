@@ -159,7 +159,8 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `chore`: install vitest as dev dependency
 - `chore`: add test scripts to package.json
 - `feat`: add project folder structure
-- `test`: add test for valid number returns correct letter
+- `test`: add test for valid type returns true
+- `feat`: implement isValidType in validations module
 
 **Fase 2 — Interfaz visual (commits atómicos):**
 
