@@ -1,20 +1,37 @@
-// Colores
+// Colores - Fondo
 $color-bg-page: #1a1a1a;
 $color-background: #222222;
 $color-checker-bg: #2e2e2e;
 $color-result-bg: #1a1a2e;
 $color-key-bg: #3a3a3a;
+$color-border-footer: #3a3a3a;
+
+// Colores - Acento
 $color-accent: #F7DF1E;
+$color-accent-hover: #fff14a;
 $color-accent-pale: rgba(247, 223, 30, 0.55);
-$color-result: #a78bfa;
-$color-delete-bg: #2e2620;
-$color-delete-text: #e0935c;
-$color-cancel: #ff4444;
+$color-accent-dark: #dac800;
+
+// Colores - Texto
 $color-white: #ffffff;
 $color-text-muted: #bbbbbb;
 $color-text-dim: #999999;
+$color-text-disabled: #555555;
+$color-text-cancelled: #888888;
 
-// Chips
+// Colores - Estado
+$color-result: #a78bfa;
+$color-cancel: #ff4444;
+$color-key-active: #3b82f6;
+$color-disabled-bg: #444444;
+$color-disabled-text: #666666;
+
+// Colores - Borrar
+$color-delete-bg: #2e2620;
+$color-delete-text: #e0935c;
+$color-delete-hover: #3a2f24;
+
+// Colores - Chips
 $color-chip-number-bg: #332e00;
 $color-chip-op-bg: #252525;
 $color-chip-op-text: #aaaaaa;
@@ -32,3 +49,9 @@ $spacing-sm: 1rem;
 $spacing-md: 1.5rem;
 $spacing-lg: 2rem;
 $spacing-xl: 3rem;
+
+// Bordes
+$border-radius-sm: 6px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+$border-radius-btn: 14px;
