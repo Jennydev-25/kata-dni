@@ -181,6 +181,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `feat`: add type validation to calculateLetter
 - `refactor`: merge all validations into single condition
 - `test`: add test for upper boundary returns correct letter
+- `feat`: implement calculateLetter with modulo 23 algorithm
 - 
 
 
