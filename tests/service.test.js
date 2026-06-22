@@ -7,4 +7,10 @@ describe('calculateLetter', () => {
         const result = calculateLetter(number)
         expect(result).toBe('Z')
     })
+
+    test('Debería devolver la letra correcta para el límite inferior (0)', () => {
+        const number = 0
+        const result = calculateLetter(number)
+        expect(result).toBe('T')
+    })
 })
