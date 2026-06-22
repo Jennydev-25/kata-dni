@@ -168,7 +168,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `test`: add test for lower boundary returns true
 - `test`: add test for out of range returns false
 - `test`: add test for negative number returns false
-- 
+- `test`: add test for valid number returns correct letter
 - 
 - 
 - 
