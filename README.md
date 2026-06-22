@@ -194,7 +194,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `chore`: install and configure sass
 - `chore`: add sass scripts to package.json
 - `style`: add sass variables
-- 
+- `style`: add base styles and reset
 - 
 - 
 - 
