@@ -23,6 +23,25 @@
                 Iniciar
             </button>
         </section>
+
+        <section class="checker" id="checker" aria-hidden="true">
+            <div class="checker__display">
+                <input class="checker__input" id="dni-input" type="text" readonly aria-label="Numero de DNI introducido"
+                    placeholder="_ _ _ _ _ _ _ _" />
+            </div>
+
+            <div class="checker__actions">
+                <button class="checker__btn checker__btn--calculate" id="btn-calculate"
+                    aria-label="Calcular letra del DNI">
+                    <span class="material-icons" aria-hidden="true">calculate</span>
+                    Calcular
+                </button>
+                <button class="checker__btn checker__btn--cancel" id="btn-cancel" aria-label="Cancelar y reiniciar">
+                    <span class="material-icons" aria-hidden="true">cancel</span>
+                    Cancelar
+                </button>
+            </div>
+        </section>
     </main>
 
     <script type="module" src="main.js"></script>

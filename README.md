@@ -201,7 +201,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `feat`: add start screen markup
 - `style`: add start screen styles and button animation
 - `style`: add Google Fonts and Material Icons imports to styles.scss
-- 
+- `feat`: add checker form markup
 
 </details>
 
