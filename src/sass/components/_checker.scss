@@ -1,68 +1,121 @@
 @use '../abstracts/variables' as v;
 
+@keyframes revealUp {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .checker {
+    background: v.$color-checker-bg;
+    border-radius: v.$border-radius-md;
+    padding: 1.25rem;
+    animation: revealUp 0.4s ease forwards;
     display: none;
     flex-direction: column;
-    align-items: center;
-    gap: v.$spacing-md;
-    padding: v.$spacing-lg;
-    width: 100%;
-    max-width: 400px;
+    gap: v.$spacing-xs;
+
+    &__title {
+        color: v.$color-accent;
+        font-size: 0.95rem;
+        margin: 0 0 v.$spacing-sm;
+    }
 
     &__display {
-        width: 100%;
+        display: flex;
+        gap: v.$spacing-xs;
+        margin-bottom: 0.75rem;
+        flex-wrap: wrap;
     }
 
     &__input {
-        width: 100%;
-        background: none;
-        border: none;
-        border-bottom: 2px solid v.$color-accent;
-        color: v.$color-accent;
-        font-size: 2rem;
-        text-align: center;
-        padding: v.$spacing-xs;
-        letter-spacing: 0.3rem;
+        flex: 1;
+        min-width: 140px;
+        padding: 0.6rem 0.75rem;
+        border-radius: v.$border-radius-md;
+        border: 2px solid v.$color-accent;
+        background: v.$color-background;
+        color: v.$color-white;
+        font-size: 0.95rem;
+        outline: none;
+        transition: border-color 0.15s;
 
         &::placeholder {
-            color: rgba(247, 223, 30, 0.3);
+            color: v.$color-text-disabled;
         }
 
-        &:focus {
-            outline: none;
+        &:disabled {
+            border-color: v.$color-disabled-bg;
+            color: v.$color-text-disabled;
+            cursor: not-allowed;
         }
     }
 
     &__actions {
         display: flex;
-        gap: v.$spacing-sm;
-        width: 100%;
+        gap: v.$spacing-xs;
+        flex-wrap: wrap;
     }
 
     &__btn {
+        padding: 0.6rem 1.1rem;
+        border-radius: v.$border-radius-md;
+        font-family: v.$font-primary;
+        font-size: 0.9rem;
+        font-weight: bold;
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: v.$spacing-xs;
-        padding: v.$spacing-xs v.$spacing-sm;
-        font-size: 1rem;
-        flex: 1;
-        border: 2px solid v.$color-accent;
-        color: v.$color-accent;
-        transition: all 0.2s ease;
+        gap: 0.4rem;
+        transition: background 0.15s;
 
-        &:hover {
-            background-color: v.$color-accent;
+        &--calculate {
+            border: none;
+            background: v.$color-accent;
             color: v.$color-background;
+
+            &:hover {
+                background: v.$color-accent-dark;
+            }
+
+            &:disabled {
+                background: v.$color-disabled-bg;
+                color: v.$color-disabled-text;
+                cursor: not-allowed;
+            }
         }
 
         &--cancel {
-            border-color: v.$color-cancel;
+            border: 2px solid v.$color-cancel;
+            background: transparent;
             color: v.$color-cancel;
 
             &:hover {
-                background-color: v.$color-cancel;
+                background: v.$color-cancel;
                 color: v.$color-white;
+            }
+
+            &:disabled {
+                border-color: v.$color-disabled-bg;
+                color: v.$color-text-disabled;
+                cursor: not-allowed;
+            }
+        }
+
+        &--restart {
+            border: 2px solid v.$color-accent;
+            background: transparent;
+            color: v.$color-accent;
+            padding: 0.6rem 1.4rem;
+
+            &:hover {
+                background: v.$color-accent;
+                color: v.$color-background;
             }
         }
     }
