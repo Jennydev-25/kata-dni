@@ -25,4 +25,10 @@ describe('calculateLetter', () => {
         const result = calculateLetter(number)
         expect(result).toBe('El dato introducido es incorrecto')
     })
+
+    test('Debería devolver un mensaje de error si el dato no es un número', () => {
+        const value = 'hola'
+        const result = calculateLetter(value)
+        expect(result).toBe('El dato introducido es incorrecto')
+    })
 })
