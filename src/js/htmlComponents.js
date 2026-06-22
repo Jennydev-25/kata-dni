@@ -1,0 +1,10 @@
+// Referencias a los elementos del DOM
+export const startScreen = document.getElementById('start-screen')
+export const checker = document.getElementById('checker')
+export const btnStart = document.getElementById('btn-start')
+export const btnCalculate = document.getElementById('btn-calculate')
+export const btnCancel = document.getElementById('btn-cancel')
+export const btnDelete = document.getElementById('btn-delete')
+export const dniInput = document.getElementById('dni-input')
+export const resultBox = document.getElementById('result-box')
+export const keypad = document.getElementById('keypad')

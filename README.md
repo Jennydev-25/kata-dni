@@ -210,7 +210,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `feat`: add footer markup
 - `style`: add footer styles
 - `refactor`: reorganize sass files into abstracts, base, layout and components folders
-- 
+- `feat`: add htmlComponents.js with DOM references
 
 </details>
 
