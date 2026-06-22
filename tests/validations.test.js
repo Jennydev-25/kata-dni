@@ -21,4 +21,10 @@ describe('isValidRange', () => {
         const result = isValidRange(number)
         expect(result).toBe(true)
     })
+
+    test('Debería devolver true si el número es el límite inferior (0)', () => {
+        const number = 0
+        const result = isValidRange(number)
+        expect(result).toBe(true)
+    })
 })
