@@ -164,7 +164,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `test`: add test for invalid type returns false
 - `test`: add test for valid range returns true
 - `feat`: implement isValidRange in validations module
-- 
+- `refactor`: simplify isValidType and isValidRange to single return
 - 
 - 
 - 

@@ -3,8 +3,5 @@ export function isValidType(value) {
 }
 
 export function isValidRange(number) {
-    if (number >= 0 && number <= 99999999) {
-        return true
-    }
-    return false
+    return number >= 0 && number <= 99999999
 }
