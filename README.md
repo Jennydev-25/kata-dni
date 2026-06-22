@@ -183,8 +183,8 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `test`: add test for upper boundary returns correct letter
 - `feat`: implement calculateLetter with modulo 23 algorithm
 - `refactor`: extract letters array to module constant
+- `refactor`: integrate validations module into service
 - 
-
 
 **Fase 2 — Interfaz visual (commits atómicos):**
 
