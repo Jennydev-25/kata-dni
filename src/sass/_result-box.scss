@@ -1,0 +1,49 @@
+@use 'variables' as v;
+
+.result-box {
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: v.$spacing-xs;
+    padding: v.$spacing-sm;
+    border: 1px solid rgba(247, 223, 30, 0.2);
+    text-align: center;
+
+    &__letter {
+        font-size: 4rem;
+        color: v.$color-result;
+        font-weight: 700;
+    }
+
+    &__chips {
+        display: flex;
+        align-items: center;
+        gap: v.$spacing-xs;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__chip {
+        padding: 0.2rem v.$spacing-xs;
+        border: 1px solid v.$color-accent;
+        color: v.$color-accent;
+        font-size: 0.8rem;
+    }
+
+    &__arrow {
+        color: v.$color-accent;
+    }
+
+    &__error {
+        color: v.$color-cancel;
+        font-size: 0.9rem;
+    }
+
+    &__message {
+        color: rgba(247, 223, 30, 0.6);
+        font-size: 0.9rem;
+    }
+}

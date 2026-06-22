@@ -137,4 +137,46 @@ input {
   color: #ffffff;
 }
 
+.result-box {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid rgba(247, 223, 30, 0.2);
+  text-align: center;
+}
+.result-box__letter {
+  font-size: 4rem;
+  color: #a78bfa;
+  font-weight: 700;
+}
+.result-box__chips {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.result-box__chip {
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #F7DF1E;
+  color: #F7DF1E;
+  font-size: 0.8rem;
+}
+.result-box__arrow {
+  color: #F7DF1E;
+}
+.result-box__error {
+  color: #ff4444;
+  font-size: 0.9rem;
+}
+.result-box__message {
+  color: rgba(247, 223, 30, 0.6);
+  font-size: 0.9rem;
+}
+
 /*# sourceMappingURL=styles.css.map */

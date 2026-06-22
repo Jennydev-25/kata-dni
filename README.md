@@ -204,6 +204,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `feat`: add checker form markup
 - `style`: add checker form styles
 - `feat`: add result box markup
+- `style`: add result box styles 
 
 </details>
 
