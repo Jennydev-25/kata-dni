@@ -147,10 +147,10 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 
 ---
 
-## 📋 Planificación de commits
+## 📋 Historial de commits
 
 <details>
-<summary>Ver lista completa de commits planificados (Fase 1 y Fase 2)</summary>
+<summary>Ver lista completa de commits (Fase 1 y Fase 2)</summary>
 
 **Fase 1 — Lógica y tests (commits atómicos):**
 
@@ -203,6 +203,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `style`: add Google Fonts and Material Icons imports to styles.scss
 - `feat`: add checker form markup
 - `style`: add checker form styles
+- `feat`: add result box markup
 
 </details>
 
