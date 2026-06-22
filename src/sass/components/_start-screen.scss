@@ -1,39 +1,59 @@
 @use '../abstracts/variables' as v;
 
-.start-screen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 60vh;
+@keyframes pulseGlow {
 
-    &__btn {
-        display: flex;
-        align-items: center;
-        gap: v.$spacing-xs;
-        padding: v.$spacing-sm v.$spacing-lg;
-        border: 2px solid v.$color-accent;
-        color: v.$color-accent;
-        font-size: 1.2rem;
-        cursor: pointer;
-        animation: pulse 1.5s infinite;
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(247, 223, 30, 0.45);
+    }
 
-        &:hover {
-            background-color: v.$color-accent;
-            color: v.$color-background;
-        }
+    50% {
+        box-shadow: 0 0 0 14px rgba(247, 223, 30, 0);
     }
 }
 
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(247, 223, 30, 0.7);
+.start-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem 3.5rem;
+    text-align: center;
+
+    &__description {
+        color: v.$color-text-dim;
+        font-size: 0.95rem;
+        margin: 0 0 2rem;
+        max-width: 320px;
     }
 
-    70% {
-        box-shadow: 0 0 0 10px rgba(247, 223, 30, 0);
-    }
+    &__btn {
+        border: none;
+        background: v.$color-accent;
+        color: #222;
+        font-family: v.$font-primary;
+        font-weight: bold;
+        font-size: 1.25rem;
+        padding: 1.1rem 3rem;
+        border-radius: 14px;
+        cursor: pointer;
+        animation: pulseGlow 2.4s infinite;
+        transition: transform 0.15s, background 0.15s;
+        display: flex;
+        align-items: center;
+        gap: v.$spacing-xs;
 
-    100% {
-        box-shadow: 0 0 0 0 rgba(247, 223, 30, 0);
+        .material-icons {
+            font-size: 1.5rem;
+        }
+
+        &:hover {
+            background: #fff14a;
+            transform: translateY(-3px) scale(1.03);
+        }
+
+        &:active {
+            transform: scale(0.96);
+        }
     }
 }

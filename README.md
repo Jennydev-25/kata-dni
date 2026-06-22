@@ -218,6 +218,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `style`: update base styles
 - `style`: update sass variables
 - `style`: update header styles
+- `style`: update start screen styles and add description paragraph
 
 </details>
 
