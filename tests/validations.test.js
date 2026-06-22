@@ -27,4 +27,10 @@ describe('isValidRange', () => {
         const result = isValidRange(number)
         expect(result).toBe(true)
     })
+
+    test('Debería devolver false si el número es mayor que 99999999', () => {
+        const number = 100000000
+        const result = isValidRange(number)
+        expect(result).toBe(false)
+    })
 })

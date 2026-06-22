@@ -166,7 +166,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `feat`: implement isValidRange in validations module
 - `refactor`: simplify isValidType and isValidRange to single return
 - `test`: add test for lower boundary returns true
-- 
+- `test`: add test for out of range returns false
 - 
 - 
 - 
