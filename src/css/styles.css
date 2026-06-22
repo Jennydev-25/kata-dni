@@ -25,22 +25,29 @@ input {
   font-family: "Courier New", Courier, monospace;
 }
 
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
 .header {
-  width: 100%;
-  padding: 1.5rem;
   text-align: center;
-  border-bottom: 1px solid #F7DF1E;
+  padding: 2.5rem 1.5rem 1.75rem;
 }
 .header__title {
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   color: #F7DF1E;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
+  margin: 0 0 0.65rem;
+  animation: float 3s ease-in-out infinite;
+  display: inline-block;
 }
-.header__title .material-icons {
-  font-size: 2rem;
+.header__subtitle {
+  font-size: 1.05rem;
+  color: #bbbbbb;
+  margin: 0;
 }
 
 .footer {

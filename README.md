@@ -217,6 +217,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `feat`: add main.js entry point
 - `style`: update base styles
 - `style`: update sass variables
+- `style`: update header styles
 
 </details>
 
