@@ -163,6 +163,15 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `feat`: implement isValidType in validations module
 - `test`: add test for invalid type returns false
 - `test`: add test for valid range returns true
+- `feat`: implement isValidRange in validations module
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 
 **Fase 2 — Interfaz visual (commits atómicos):**
 
