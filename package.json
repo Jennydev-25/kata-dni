@@ -1,0 +1,20 @@
+{
+  "name": "kata-dni",
+  "version": "1.0.0",
+  "description": "Kata que calcula la letra del DNI a partir de un numero (modulo 23), con JavaScript + Vitest (TDD) y SASS modular. Proyecto del bootcamp de Factoria F5.",
+  "homepage": "https://github.com/Jennydev-25/kata-dni#readme",
+  "bugs": {
+    "url": "https://github.com/Jennydev-25/kata-dni/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jennydev-25/kata-dni.git"
+  },
+  "license": "ISC",
+  "author": "Jennydev-25",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
