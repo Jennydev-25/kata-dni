@@ -206,6 +206,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `feat`: add result box markup
 - `style`: add result box styles 
 - `feat`: add keypad markup
+- `style`: add keypad styles 
 
 </details>
 

@@ -179,4 +179,39 @@ input {
   font-size: 0.9rem;
 }
 
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  width: 100%;
+}
+.keypad__key {
+  padding: 1rem;
+  border: 1px solid rgba(247, 223, 30, 0.3);
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: background-color 0.15s ease;
+}
+.keypad__key:hover {
+  background-color: rgba(247, 223, 30, 0.1);
+}
+.keypad__key:active {
+  background-color: rgba(100, 149, 237, 0.5);
+}
+.keypad__key--zero {
+  grid-column: span 2;
+}
+.keypad__key--delete {
+  background-color: #2e2620;
+  color: #e0935c;
+  border-color: #2e2620;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.keypad__key--delete:hover {
+  background-color: #1e1a16;
+}
+
 /*# sourceMappingURL=styles.css.map */
