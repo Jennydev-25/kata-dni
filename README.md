@@ -213,6 +213,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `feat`: add htmlComponents.js with DOM references
 - `feat`: add rendering.js to display results and errors
 - `feat`: implement events and user interaction handlers
+- `feat`: add controller.js to wire up events
 - 
 
 </details>
