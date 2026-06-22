@@ -222,7 +222,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `style`: refactor sass partials to remove hardcoded values
 - `refactor`: use variables in base styles
 - `refactor`: use variables in header styles
-- `refactor`:
+- `refactor`: use variables in start screen styles
 - `refactor`:
 - `refactor`:
 - `refactor`:
