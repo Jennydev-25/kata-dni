@@ -185,6 +185,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `refactor`: extract letters array to module constant
 - `refactor`: integrate validations module into service
 - `chore`: install jsdom for DOM testing
+- `chore`: add vitest config with jsdom environment
 - 
 
 **Fase 2 — Interfaz visual (commits atómicos):**
