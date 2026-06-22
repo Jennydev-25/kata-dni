@@ -208,6 +208,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `feat`: add keypad markup
 - `style`: add keypad styles 
 - `feat`: add footer markup
+- `style`: add footer styles
 
 </details>
 
