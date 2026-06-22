@@ -8,22 +8,20 @@
 }
 
 body {
-    background-color: v.$color-background;
-    font-family: v.$font-primary;
-    color: v.$color-white;
+    background: #1a1a1a;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 button {
     cursor: pointer;
-    border: none;
-    background: none;
-    font-family: v.$font-primary;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 input {
-    font-family: v.$font-primary;
+    font-family: 'Courier New', Courier, monospace;
 }

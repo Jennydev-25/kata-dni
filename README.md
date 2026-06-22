@@ -215,6 +215,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `feat`: implement events and user interaction handlers
 - `feat`: add controller.js to wire up events
 - `feat`: add main.js entry point
+- `style`: update base styles
 
 </details>
 
