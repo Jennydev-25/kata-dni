@@ -15,7 +15,9 @@
   "type": "module",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest run",
+    "test-w": "vitest",
+    "test-cover": "vitest run --coverage"
   },
   "devDependencies": {
     "vitest": "^4.1.9"
