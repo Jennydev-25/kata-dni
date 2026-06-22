@@ -205,6 +205,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `style`: add checker form styles
 - `feat`: add result box markup
 - `style`: add result box styles 
+- `feat`: add keypad markup
 
 </details>
 
