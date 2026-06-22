@@ -195,7 +195,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `chore`: add sass scripts to package.json
 - `style`: add sass variables
 - `style`: add base styles and reset
-- 
+- `feat`: add header markup
 - 
 - 
 - 
