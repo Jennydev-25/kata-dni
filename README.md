@@ -175,7 +175,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `test`: add test for out of range number returns error message
 - `feat`: add range validation to calculateLetter
 - `test`: add test for negative number returns error message
-- 
+- `feat`: add negative number validation to calculateLetter
 - 
 - 
 - 
