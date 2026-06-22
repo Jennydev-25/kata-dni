@@ -197,7 +197,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `style`: add base styles and reset
 - `feat`: add header markup
 - `style`: add header styles
-- 
+- `feat`: add css link to index.html
 - 
 - 
 - 
