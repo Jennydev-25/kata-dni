@@ -1,12 +1,12 @@
 // Punto de entrada - importa todos los partials
-@use 'variables';
-@use 'base';
-@use 'header';
-@use 'start-screen';
-@use 'checker';
-@use 'result-box';
-@use 'keypad';
-@use 'footer';
+@use 'abstracts/variables';
+@use 'base/base';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'components/start-screen';
+@use 'components/checker';
+@use 'components/result-box';
+@use 'components/keypad';
 
 // Fuentes e iconos externos
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');

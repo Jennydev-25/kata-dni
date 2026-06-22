@@ -45,6 +45,18 @@ input {
   font-size: 2rem;
 }
 
+.footer {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  border-top: 1px solid rgba(247, 223, 30, 0.55);
+  margin-top: auto;
+}
+.footer__text {
+  color: rgba(247, 223, 30, 0.55);
+  font-size: 0.8rem;
+}
+
 .start-screen {
   display: flex;
   justify-content: center;
@@ -212,18 +224,6 @@ input {
 }
 .keypad__key--delete:hover {
   background-color: #1e1a16;
-}
-
-.footer {
-  width: 100%;
-  padding: 1rem 1.5rem;
-  text-align: center;
-  border-top: 1px solid rgba(247, 223, 30, 0.55);
-  margin-top: auto;
-}
-.footer__text {
-  color: rgba(247, 223, 30, 0.55);
-  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
