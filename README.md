@@ -184,6 +184,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `feat`: implement calculateLetter with modulo 23 algorithm
 - `refactor`: extract letters array to module constant
 - `refactor`: integrate validations module into service
+- `chore`: install jsdom for DOM testing
 - 
 
 **Fase 2 — Interfaz visual (commits atómicos):**
