@@ -1,14 +1,14 @@
 @use '../abstracts/variables' as v;
 
 .footer {
-    width: 100%;
-    padding: v.$spacing-sm v.$spacing-md;
     text-align: center;
-    border-top: 1px solid v.$color-accent-pale;
-    margin-top: auto;
+    padding: 1.1rem;
+    color: v.$color-accent-pale;
+    font-size: 0.85rem;
+    border-top: 1px solid v.$color-border-footer;
+    margin-top: 1.25rem;
 
     &__text {
-        color: v.$color-accent-pale;
-        font-size: 0.8rem;
+        margin: 0;
     }
 }

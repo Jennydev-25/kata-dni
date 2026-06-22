@@ -226,7 +226,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `refactor`: use variables in checker styles
 - `refactor`: use variables in result box styles
 - `refactor`: use variables in keypad styles
-- `refactor`: 
+- `refactor`: use variables in footer styles
 
 </details>
 
