@@ -7,4 +7,10 @@ describe('isValidType', () => {
         const result = isValidType(value)
         expect(result).toBe(true)
     })
+
+    it('devuelve false si el dato no es un número', () => {
+        const value = 'hola'
+        const result = isValidType(value)
+        expect(result).toBe(false)
+    })
 })
