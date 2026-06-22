@@ -193,7 +193,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `feat`: add html boilerplate and base structure
 - `chore`: install and configure sass
 - `chore`: add sass scripts to package.json
-- 
+- `style`: add sass variables
 - 
 - 
 - 
