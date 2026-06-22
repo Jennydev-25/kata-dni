@@ -191,6 +191,17 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 **Fase 2 — Interfaz visual (commits atómicos):**
 
 - `feat`: add html boilerplate and base structure
+- `chore`: install and configure sass
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 
 </details>
 
