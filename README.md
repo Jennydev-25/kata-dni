@@ -235,6 +235,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `test`: add test for start screen hides on init button click
 - `refactor`: extract DOM references in start screen test
 - `test`: add test for checker shows on init button click
+- `feat`: fix module caching with vi.resetModules in dom tests
 
 </details>
 

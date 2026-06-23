@@ -1,6 +1,7 @@
-import { describe, test, expect, beforeEach } from 'vitest'
+import { describe, test, expect, beforeEach, vi } from 'vitest'
 
 beforeEach(() => {
+    vi.resetModules()
     document.body.innerHTML = `
         <section class="start-screen" id="start-screen">
             <button id="btn-start">Iniciar</button>
