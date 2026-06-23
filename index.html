@@ -9,64 +9,70 @@
 </head>
 
 <body>
-    <header class="header">
-        <h1 class="header__title">
-            <span class="material-icons" aria-hidden="true">badge</span>
-            Kata DNI
-        </h1>
-        <p class="header__subtitle">Introduce un número y descubre la letra de tu DNI</p>
-    </header>
+    <div class="dni-wrap">
+        <header class="header">
+            <h1 class="header__title">
+                <span class="material-icons" aria-hidden="true">badge</span>
+                Kata DNI
+            </h1>
+            <p class="header__subtitle">Introduce un número y descubre la letra de tu DNI</p>
+        </header>
 
-    <main class="main">
-        <section class="start-screen" id="start-screen">
-            <p class="start-screen__description">Pulsa el botón para empezar a calcular la letra de tu DNI</p>
-            <button class="start-screen__btn" id="btn-start" aria-label="Iniciar calculadora de DNI">
-                <span class="material-icons" aria-hidden="true">play_arrow</span>
-                Iniciar
-            </button>
-        </section>
-
-        <section class="checker" id="checker" aria-hidden="true">
-            <div class="checker__display">
-                <input class="checker__input" id="dni-input" type="text" readonly aria-label="Numero de DNI introducido"
-                    placeholder="_ _ _ _ _ _ _ _" />
-            </div>
-
-            <div class="checker__actions">
-                <button class="checker__btn checker__btn--calculate" id="btn-calculate"
-                    aria-label="Calcular letra del DNI">
-                    <span class="material-icons" aria-hidden="true">calculate</span>
-                    Calcular
+        <main class="main">
+            <section class="start-screen" id="start-screen">
+                <p class="start-screen__description">Pulsa el botón para empezar a calcular</p>
+                <button class="start-screen__btn" id="btn-start" aria-label="Iniciar calculadora de DNI">
+                    <span class="material-icons" aria-hidden="true">play_arrow</span>
+                    Iniciar
                 </button>
-                <button class="checker__btn checker__btn--cancel" id="btn-cancel" aria-label="Cancelar y reiniciar">
-                    <span class="material-icons" aria-hidden="true">cancel</span>
-                    Cancelar
-                </button>
-            </div>
+            </section>
 
-            <div class="result-box" id="result-box" aria-live="polite"></div>
-            <div class="keypad" id="keypad" aria-label="Teclado numerico">
-                <button class="keypad__key" data-key="7" aria-label="7">7</button>
-                <button class="keypad__key" data-key="8" aria-label="8">8</button>
-                <button class="keypad__key" data-key="9" aria-label="9">9</button>
-                <button class="keypad__key" data-key="4" aria-label="4">4</button>
-                <button class="keypad__key" data-key="5" aria-label="5">5</button>
-                <button class="keypad__key" data-key="6" aria-label="6">6</button>
-                <button class="keypad__key" data-key="1" aria-label="1">1</button>
-                <button class="keypad__key" data-key="2" aria-label="2">2</button>
-                <button class="keypad__key" data-key="3" aria-label="3">3</button>
-                <button class="keypad__key keypad__key--zero" data-key="0" aria-label="0">0</button>
-                <button class="keypad__key keypad__key--delete" id="btn-delete" aria-label="Borrar ultimo digito">
-                    <span class="material-icons" aria-hidden="true">backspace</span>
-                    Borrar
-                </button>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <p class="footer__text">© 2026 Kata DNI. Todos los derechos reservados.</p>
-        <p class="footer__text">Desarrollado por Jennydev-25</p>
-    </footer>
+            <section class="checker" id="checker" aria-hidden="true">
+                <h2 class="checker__title">Calcula la letra</h2>
+                <div class="checker__display">
+                    <input class="checker__input" id="dni-input" type="text" readonly
+                        aria-label="Numero de DNI introducido" placeholder="Introduce un número" />
+                </div>
+
+                <div class="checker__actions">
+                    <button class="checker__btn checker__btn--calculate" id="btn-calculate"
+                        aria-label="Calcular letra del DNI">
+                        <span class="material-icons" aria-hidden="true">calculate</span>
+                        Calcular
+                    </button>
+                    <button class="checker__btn checker__btn--cancel" id="btn-cancel" aria-label="Cancelar y reiniciar">
+                        <span class="material-icons" aria-hidden="true">cancel</span>
+                        Cancelar
+                    </button>
+                </div>
+
+                <div class="result-box" id="result-box" aria-live="polite"></div>
+
+                <div class="keypad" id="keypad" aria-label="Teclado numerico">
+                    <button class="keypad__key" data-key="7" aria-label="7">7</button>
+                    <button class="keypad__key" data-key="8" aria-label="8">8</button>
+                    <button class="keypad__key" data-key="9" aria-label="9">9</button>
+                    <button class="keypad__key" data-key="4" aria-label="4">4</button>
+                    <button class="keypad__key" data-key="5" aria-label="5">5</button>
+                    <button class="keypad__key" data-key="6" aria-label="6">6</button>
+                    <button class="keypad__key" data-key="1" aria-label="1">1</button>
+                    <button class="keypad__key" data-key="2" aria-label="2">2</button>
+                    <button class="keypad__key" data-key="3" aria-label="3">3</button>
+                    <button class="keypad__key keypad__key--zero" data-key="0" aria-label="0">0</button>
+                    <button class="keypad__key keypad__key--delete" id="btn-delete" aria-label="Borrar ultimo digito">
+                        <span class="material-icons" aria-hidden="true">backspace</span>
+                        Borrar
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__text">© 2026 Kata DNI. Todos los derechos reservados.</p>
+            <p class="footer__text">Desarrollado por Jennydev-25</p>
+        </footer>
+    </div>
+
     <script type="module" src="main.js"></script>
 </body>
 
