@@ -14,6 +14,21 @@ function setDisabled(disabled) {
     keypad.querySelectorAll('.keypad__key').forEach(key => key.disabled = disabled)
 }
 
+// Funcion auxiliar para calcular
+function calcular() {
+    if (dniInput.value === '') {
+        renderMessage(GUIDE_MESSAGE)
+        return
+    }
+    const number = parseInt(dniInput.value)
+    const result = calculateLetter(number)
+    if (result === ERROR_MESSAGE) {
+        renderError(result)
+    } else {
+        renderResult(result, number)
+    }
+}
+
 // Evento boton iniciar
 export function handleStart() {
     btnStart.addEventListener('click', () => {
@@ -36,6 +51,23 @@ export function handleKeypad() {
         key.classList.add('keypad__key--active')
         setTimeout(() => key.classList.remove('keypad__key--active'), 150)
     })
+
+    // Permite escribir con el teclado fisico
+    document.addEventListener('keydown', (event) => {
+        if (dniInput.disabled) return
+        if (event.key >= '0' && event.key <= '9') {
+            if (dniInput.value.length >= MAX_DIGITS) return
+            dniInput.value += event.key
+            clearResult()
+        }
+        if (event.key === 'Backspace') {
+            dniInput.value = dniInput.value.slice(0, -1)
+            clearResult()
+        }
+        if (event.key === 'Enter') {
+            calcular()
+        }
+    })
 }
 
 // Evento boton borrar
@@ -49,19 +81,7 @@ export function handleDelete() {
 // Evento boton calcular
 export function handleCalculate() {
     btnCalculate.addEventListener('click', () => {
-        if (dniInput.value === '') {
-            renderMessage(GUIDE_MESSAGE)
-            return
-        }
-
-        const number = parseInt(dniInput.value)
-        const result = calculateLetter(number)
-
-        if (result === ERROR_MESSAGE) {
-            renderError(result)
-        } else {
-            renderResult(result, number)
-        }
+        calcular()
     })
 }
 

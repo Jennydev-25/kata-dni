@@ -231,6 +231,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `refactor`: update index.html structure and add BEM classes
 - `refactor`: add wrapper and main styles to base
 - `refactor`: update events to handle disabled state and restart button
+- `feat`: add keyboard and enter key support
 
 </details>
 
