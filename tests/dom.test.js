@@ -26,6 +26,13 @@ async function iniciarApp() {
     document.getElementById('btn-start').click()
 }
 
+// Funcion auxiliar para cancelar la app en los tests
+async function cancelarApp() {
+    const { handleCancel } = await import('../src/js/events.js')
+    handleCancel()
+    document.getElementById('btn-cancel').click()
+}
+
 describe('Escenario 1 - Iniciar el sistema', () => {
     test('Debería ocultar la pantalla de inicio al pulsar Iniciar', async () => {
         await iniciarApp()
@@ -41,11 +48,7 @@ describe('Escenario 1 - Iniciar el sistema', () => {
 describe('Escenario 5 - Cancelar el proceso', () => {
     test('Debería deshabilitar los controles al pulsar Cancelar', async () => {
         await iniciarApp()
-
-        const { handleCancel } = await import('../src/js/events.js')
-        handleCancel()
-
-        document.getElementById('btn-cancel').click()
+        await cancelarApp()
 
         expect(document.getElementById('dni-input').disabled).toBe(true)
     })

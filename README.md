@@ -238,6 +238,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `feat`: fix module caching with vi.resetModules in dom tests
 - `refactor`: extract iniciarApp helper function in dom tests
 - `test`: add test for controls disabled on cancel button click
+- `refactor`: extract cancelarApp helper function in dom tests
 - 
 
 </details>
