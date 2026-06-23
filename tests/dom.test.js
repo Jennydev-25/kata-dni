@@ -19,28 +19,21 @@ beforeEach(() => {
     `
 })
 
+// Funcion auxiliar para iniciar la app en los tests
+async function iniciarApp() {
+    const { handleStart } = await import('../src/js/events.js')
+    handleStart()
+    document.getElementById('btn-start').click()
+}
+
 describe('Escenario 1 - Iniciar el sistema', () => {
     test('Debería ocultar la pantalla de inicio al pulsar Iniciar', async () => {
-        const { handleStart } = await import('../src/js/events.js')
-        handleStart()
-
-        const btnStart = document.getElementById('btn-start')
-        const startScreen = document.getElementById('start-screen')
-
-        btnStart.click()
-
-        expect(startScreen.style.display).toBe('none')
+        await iniciarApp()
+        expect(document.getElementById('start-screen').style.display).toBe('none')
     })
 
     test('Debería mostrar el checker al pulsar Iniciar', async () => {
-        const { handleStart } = await import('../src/js/events.js')
-        handleStart()
-
-        const btnStart = document.getElementById('btn-start')
-        const checker = document.getElementById('checker')
-
-        btnStart.click()
-
-        expect(checker.style.display).toBe('flex')
+        await iniciarApp()
+        expect(document.getElementById('checker').style.display).toBe('flex')
     })
 })
