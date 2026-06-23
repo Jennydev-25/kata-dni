@@ -37,3 +37,16 @@ describe('Escenario 1 - Iniciar el sistema', () => {
         expect(document.getElementById('checker').style.display).toBe('flex')
     })
 })
+
+describe('Escenario 5 - Cancelar el proceso', () => {
+    test('Debería deshabilitar los controles al pulsar Cancelar', async () => {
+        await iniciarApp()
+
+        const { handleCancel } = await import('../src/js/events.js')
+        handleCancel()
+
+        document.getElementById('btn-cancel').click()
+
+        expect(document.getElementById('dni-input').disabled).toBe(true)
+    })
+})

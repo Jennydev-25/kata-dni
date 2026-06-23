@@ -237,6 +237,8 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `test`: add test for checker shows on init button click
 - `feat`: fix module caching with vi.resetModules in dom tests
 - `refactor`: extract iniciarApp helper function in dom tests
+- `test`: add test for controls disabled on cancel button click
+- 
 
 </details>
 
