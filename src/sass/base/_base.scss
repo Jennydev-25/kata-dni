@@ -16,6 +16,18 @@ body {
     font-family: v.$font-primary;
 }
 
+.dni-wrap {
+    background: v.$color-background;
+    border-radius: v.$border-radius-lg;
+    overflow: hidden;
+    width: 100%;
+    max-width: 480px;
+}
+
+.main {
+    padding: 0 1.25rem 1.5rem;
+}
+
 button {
     cursor: pointer;
     font-family: v.$font-primary;

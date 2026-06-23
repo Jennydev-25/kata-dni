@@ -16,6 +16,18 @@ body {
   font-family: "Courier New", Courier, monospace;
 }
 
+.dni-wrap {
+  background: #222222;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 480px;
+}
+
+.main {
+  padding: 0 1.25rem 1.5rem;
+}
+
 button {
   cursor: pointer;
   font-family: "Courier New", Courier, monospace;
