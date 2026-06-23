@@ -23,8 +23,11 @@ describe('Escenario 1 - Iniciar el sistema', () => {
         const { handleStart } = await import('../src/js/events.js')
         handleStart()
 
-        document.getElementById('btn-start').click()
+        const btnStart = document.getElementById('btn-start')
+        const startScreen = document.getElementById('start-screen')
 
-        expect(document.getElementById('start-screen').style.display).toBe('none')
+        btnStart.click()
+
+        expect(startScreen.style.display).toBe('none')
     })
 })
