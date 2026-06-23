@@ -64,4 +64,14 @@ describe('Escenario 6 - Reiniciar el proceso', () => {
 
         expect(document.getElementById('dni-input').disabled).toBe(false)
     })
+
+    test('Debería limpiar el input al pulsar Reiniciar', async () => {
+        await iniciarApp()
+        await cancelarApp()
+
+        const btnReiniciar = document.querySelector('.checker__btn--restart')
+        btnReiniciar.click()
+
+        expect(document.getElementById('dni-input').value).toBe('')
+    })
 })
