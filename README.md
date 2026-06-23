@@ -234,6 +234,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `feat`: add keyboard and enter key support
 - `test`: add test for start screen hides on init button click
 - `refactor`: extract DOM references in start screen test
+- `test`: add test for checker shows on init button click
 
 </details>
 

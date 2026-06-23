@@ -30,4 +30,16 @@ describe('Escenario 1 - Iniciar el sistema', () => {
 
         expect(startScreen.style.display).toBe('none')
     })
+
+    test('Debería mostrar el checker al pulsar Iniciar', async () => {
+        const { handleStart } = await import('../src/js/events.js')
+        handleStart()
+
+        const btnStart = document.getElementById('btn-start')
+        const checker = document.getElementById('checker')
+
+        btnStart.click()
+
+        expect(checker.style.display).toBe('flex')
+    })
 })
