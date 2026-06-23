@@ -232,6 +232,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `refactor`: add wrapper and main styles to base
 - `refactor`: update events to handle disabled state and restart button
 - `feat`: add keyboard and enter key support
+- `test`: add test for start screen hides on init button click
 
 </details>
 
