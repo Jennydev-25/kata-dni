@@ -33,6 +33,13 @@ async function cancelarApp() {
     document.getElementById('btn-cancel').click()
 }
 
+// Funcion auxiliar para reiniciar la app en los tests
+async function reiniciarApp() {
+    await iniciarApp()
+    await cancelarApp()
+    document.querySelector('.checker__btn--restart').click()
+}
+
 describe('Escenario 1 - Iniciar el sistema', () => {
     test('Debería ocultar la pantalla de inicio al pulsar Iniciar', async () => {
         await iniciarApp()
@@ -56,21 +63,13 @@ describe('Escenario 5 - Cancelar el proceso', () => {
 
 describe('Escenario 6 - Reiniciar el proceso', () => {
     test('Debería habilitar los controles al pulsar Reiniciar', async () => {
-        await iniciarApp()
-        await cancelarApp()
-
-        const btnReiniciar = document.querySelector('.checker__btn--restart')
-        btnReiniciar.click()
+        await reiniciarApp()
 
         expect(document.getElementById('dni-input').disabled).toBe(false)
     })
 
     test('Debería limpiar el input al pulsar Reiniciar', async () => {
-        await iniciarApp()
-        await cancelarApp()
-
-        const btnReiniciar = document.querySelector('.checker__btn--restart')
-        btnReiniciar.click()
+        await reiniciarApp()
 
         expect(document.getElementById('dni-input').value).toBe('')
     })
