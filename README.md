@@ -227,6 +227,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `refactor`: use variables in result box styles
 - `refactor`: use variables in keypad styles
 - `refactor`: use variables in footer styles
+- `refactor`: update rendering.js to use BEM classes
 
 </details>
 
