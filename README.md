@@ -239,7 +239,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `refactor`: extract iniciarApp helper function in dom tests
 - `test`: add test for controls disabled on cancel button click
 - `refactor`: extract cancelarApp helper function in dom tests
-- 
+- `test`: add test for controls enabled on restart button click
 
 </details>
 

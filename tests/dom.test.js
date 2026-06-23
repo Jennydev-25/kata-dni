@@ -53,3 +53,15 @@ describe('Escenario 5 - Cancelar el proceso', () => {
         expect(document.getElementById('dni-input').disabled).toBe(true)
     })
 })
+
+describe('Escenario 6 - Reiniciar el proceso', () => {
+    test('Debería habilitar los controles al pulsar Reiniciar', async () => {
+        await iniciarApp()
+        await cancelarApp()
+
+        const btnReiniciar = document.querySelector('.checker__btn--restart')
+        btnReiniciar.click()
+
+        expect(document.getElementById('dni-input').disabled).toBe(false)
+    })
+})
