@@ -253,6 +253,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `feat`: add integer validation to isValidRange
 - `refactor`: simplify isValidRange to single return with integer check
 - `fix`: add checker left and right columns to dom test mock
+- `refactor`: export ERROR_MESSAGE constant from service module
 
 </details>
 
