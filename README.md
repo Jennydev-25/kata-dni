@@ -186,7 +186,6 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `refactor`: integrate validations module into service
 - `chore`: install jsdom for DOM testing
 - `chore`: add vitest config with jsdom environment
-- 
 
 **Fase 2 — Interfaz visual (commits atómicos):**
 
@@ -247,8 +246,8 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `style`: increase wrapper max-width for two column layout
 - `refactor`: add two column structure to checker section
 - `style`: add two column responsive layout to checker
+- `refactor`: move restart button to checker right column
 - 
-
 
 </details>
 

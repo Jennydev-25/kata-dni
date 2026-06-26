@@ -91,6 +91,7 @@ export function handleCancel() {
         setDisabled(true)
         renderMessage('Proceso finalizado — pulsa Reiniciar para continuar')
 
+        const checkerRight = checker.querySelector('.checker__right')
         const btnReiniciar = document.createElement('button')
         btnReiniciar.className = 'checker__btn checker__btn--restart'
         btnReiniciar.textContent = 'Reiniciar'
@@ -102,6 +103,6 @@ export function handleCancel() {
             btnReiniciar.remove()
         })
 
-        checker.appendChild(btnReiniciar)
+        checkerRight.appendChild(btnReiniciar)
     })
 }
