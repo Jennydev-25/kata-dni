@@ -24,7 +24,8 @@ function calculate() {
     if (result === ERROR_MESSAGE) {
         renderError(result)
     } else {
-        renderResult(result, number)
+        const remainder = number % 23
+        renderResult(result, number, remainder)
     }
 }
 

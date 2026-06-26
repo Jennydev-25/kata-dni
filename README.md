@@ -256,6 +256,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `refactor`: export ERROR_MESSAGE constant from service module
 - `refactor`: improve accessibility, rename calculate function and remove wrapper
 - `refactor`: pass remainder as parameter to renderResult to avoid recalculation
+- `refactor`: calculate remainder once and pass to renderResult
 
 </details>
 
