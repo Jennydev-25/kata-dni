@@ -83,7 +83,9 @@ Antes de programar la interfaz analicé qué elementos HTML necesitaría para co
 
 ## 🚀 Instalación
 
-**Requisitos previos:** [Node.js](https://nodejs.org/) instalado en tu equipo.
+**Requisitos previos:** 
+
+[Node.js](https://nodejs.org/) instalado en tu equipo.
 
 ```bash
 # Comprueba si ya lo tienes instalado
@@ -263,6 +265,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `refactor`: calculate remainder once and pass to renderResult
 - `docs`: add tests screenshot to README
 - `docs`: add app screenshots and GitHub Pages link to README
+- `docs`: resize tests screenshot in README
 
 </details>
 
@@ -272,7 +275,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 
 Seis escenarios **BDD** con patrón **AAA** (Arrange · Act · Assert):
 
-![Captura de los tests en verde](assets/imgs/tests.png)
+<img src="assets/imgs/tests.png" alt="Captura de los tests en verde" width="700" />
 
 ### Escenario 1 — Iniciar el sistema
 
