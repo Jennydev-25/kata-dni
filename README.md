@@ -252,6 +252,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `test`: add test for decimal number returns false in isValidRange
 - `feat`: add integer validation to isValidRange
 - `refactor`: simplify isValidRange to single return with integer check
+- `fix`: add checker left and right columns to dom test mock
 
 </details>
 

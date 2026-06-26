@@ -7,13 +7,17 @@ beforeEach(() => {
             <button id="btn-start">Iniciar</button>
         </section>
         <section class="checker" id="checker" style="display:none">
-            <input id="dni-input" type="text" />
-            <button id="btn-calculate">Calcular</button>
-            <button id="btn-cancel">Cancelar</button>
-            <button id="btn-delete">Borrar</button>
-            <div id="result-box"></div>
-            <div id="keypad">
-                <button class="keypad__key" data-key="1">1</button>
+            <div class="checker__left">
+                <input id="dni-input" type="text" />
+                <button id="btn-calculate">Calcular</button>
+                <button id="btn-cancel">Cancelar</button>
+                <div id="result-box"></div>
+            </div>
+            <div class="checker__right">
+                <div id="keypad">
+                    <button class="keypad__key" data-key="1">1</button>
+                </div>
+                <button id="btn-delete">Borrar</button>
             </div>
         </section>
     `
