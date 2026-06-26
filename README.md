@@ -244,7 +244,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `refactor`: extract reiniciarApp helper function in dom tests
 - `refactor`: simplify DOM references using map in htmlComponents
 - `style`: add breakpoint variables
-- 
+- `style`: increase wrapper max-width for two column layout
 - 
 
 
