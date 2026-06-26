@@ -247,7 +247,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `refactor`: add two column structure to checker section
 - `style`: add two column responsive layout to checker
 - `refactor`: move restart button to checker right column
-- 
+- `style`: improve result box text visibility and compact chips
 
 </details>
 
