@@ -249,6 +249,9 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `refactor`: move restart button to checker right column
 - `style`: improve result box text visibility and compact chips
 - `style`: make calculate button outline style to match cancel button
+- `test`: add test for decimal number returns false in isValidRange
+- 
+- 
 
 </details>
 
