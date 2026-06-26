@@ -197,16 +197,22 @@ input {
 }
 .checker__btn--calculate {
   flex: 1;
-  border: none;
+  border: 2px solid #F7DF1E;
+  background: transparent;
+  color: #F7DF1E;
+}
+.checker__btn--calculate:hover {
   background: #F7DF1E;
   color: #222222;
 }
-.checker__btn--calculate:hover {
-  background: #dac800;
+.checker__btn--calculate:active {
+  background: #F7DF1E;
+  color: #222222;
 }
 .checker__btn--calculate:disabled {
   background: #444444;
   color: #666666;
+  border-color: #444444;
   cursor: not-allowed;
 }
 .checker__btn--cancel {

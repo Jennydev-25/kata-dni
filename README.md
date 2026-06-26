@@ -248,6 +248,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `style`: add two column responsive layout to checker
 - `refactor`: move restart button to checker right column
 - `style`: improve result box text visibility and compact chips
+- `style`: make calculate button outline style to match cancel button
 
 </details>
 

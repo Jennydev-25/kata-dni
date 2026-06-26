@@ -85,17 +85,24 @@
 
         &--calculate {
             flex: 1;
-            border: none;
-            background: v.$color-accent;
-            color: v.$color-background;
+            border: 2px solid v.$color-accent;
+            background: transparent;
+            color: v.$color-accent;
 
             &:hover {
-                background: v.$color-accent-dark;
+                background: v.$color-accent;
+                color: v.$color-background;
+            }
+
+            &:active {
+                background: v.$color-accent;
+                color: v.$color-background;
             }
 
             &:disabled {
                 background: v.$color-disabled-bg;
                 color: v.$color-disabled-text;
+                border-color: v.$color-disabled-bg;
                 cursor: not-allowed;
             }
         }
