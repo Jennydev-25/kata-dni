@@ -16,8 +16,6 @@ Desarrollado con **HTML**, **SASS** y **JavaScript** con **ES Modules**, aplican
 
 ## ✨ Vista previa
 
-## ✨ Vista previa
-
 🚀 [Ver en GitHub Pages](https://jennydev-25.github.io/kata-dni/)
 
 | Pantalla de inicio | Calculadora |
