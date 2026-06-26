@@ -242,6 +242,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `test`: add test for controls enabled on restart button click
 - `test`: add test for input cleared on restart button click
 - `refactor`: extract reiniciarApp helper function in dom tests
+- `refactor`: simplify DOM references using map in htmlComponents
 
 </details>
 
