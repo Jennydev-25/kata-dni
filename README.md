@@ -1,4 +1,4 @@
-# 🆔 Kata DNI 
+# 🆔 Kata DNI
 
 _"El DNI es solo un número… hasta que tienes que calcular su letra."_
 
@@ -16,9 +16,13 @@ Desarrollado con **HTML**, **SASS** y **JavaScript** con **ES Modules**, aplican
 
 ## ✨ Vista previa
 
-🚀 [Ver en GitHub Pages] _en proceso_
+## ✨ Vista previa
 
-📸 _En proceso_
+🚀 [Ver en GitHub Pages](https://jennydev-25.github.io/kata-dni/)
+
+| Pantalla de inicio | Calculadora |
+| --- | --- |
+| ![Pantalla de inicio](assets/imgs/preview-start.png) | ![Calculadora](assets/imgs/preview-calculator.png) |
 
 ---
 
@@ -203,9 +207,9 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `feat`: add checker form markup
 - `style`: add checker form styles
 - `feat`: add result box markup
-- `style`: add result box styles 
+- `style`: add result box styles
 - `feat`: add keypad markup
-- `style`: add keypad styles 
+- `style`: add keypad styles
 - `feat`: add footer markup
 - `style`: add footer styles
 - `refactor`: reorganize sass files into abstracts, base, layout and components folders
@@ -257,6 +261,8 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `refactor`: improve accessibility, rename calculate function and remove wrapper
 - `refactor`: pass remainder as parameter to renderResult to avoid recalculation
 - `refactor`: calculate remainder once and pass to renderResult
+- `docs`: add tests screenshot to README
+- `docs`: add app screenshots and GitHub Pages link to README
 
 </details>
 
@@ -266,7 +272,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 
 Seis escenarios **BDD** con patrón **AAA** (Arrange · Act · Assert):
 
----
+![Captura de los tests en verde](assets/imgs/tests.png)
 
 ### Escenario 1 — Iniciar el sistema
 
