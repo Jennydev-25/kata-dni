@@ -254,6 +254,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `refactor`: simplify isValidRange to single return with integer check
 - `fix`: add checker left and right columns to dom test mock
 - `refactor`: export ERROR_MESSAGE constant from service module
+- `refactor`: improve accessibility, rename calculate function and remove wrapper
 
 </details>
 

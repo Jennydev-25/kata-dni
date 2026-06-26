@@ -1,8 +1,7 @@
 import { btnStart, btnCalculate, btnCancel, btnDelete, dniInput, startScreen, checker, keypad } from './htmlComponents.js'
-import { calculateLetter } from './service.js'
+import { calculateLetter, ERROR_MESSAGE } from './service.js'
 import { renderResult, renderError, renderMessage, clearResult } from './rendering.js'
 
-const ERROR_MESSAGE = 'El dato introducido es incorrecto'
 const GUIDE_MESSAGE = 'Introduce tu numero de DNI'
 const MAX_DIGITS = 8
 
@@ -14,8 +13,8 @@ function setDisabled(disabled) {
     keypad.querySelectorAll('.keypad__key').forEach(key => key.disabled = disabled)
 }
 
-// Funcion auxiliar para calcular
-function calcular() {
+// Funcion auxiliar para calcular la letra del DNI
+function calculate() {
     if (dniInput.value === '') {
         renderMessage(GUIDE_MESSAGE)
         return
@@ -33,7 +32,9 @@ function calcular() {
 export function handleStart() {
     btnStart.addEventListener('click', () => {
         startScreen.style.display = 'none'
+        startScreen.setAttribute('aria-hidden', 'true')
         checker.style.display = 'flex'
+        checker.removeAttribute('aria-hidden')
         renderMessage(GUIDE_MESSAGE)
     })
 }
@@ -65,7 +66,7 @@ export function handleKeypad() {
             clearResult()
         }
         if (event.key === 'Enter') {
-            calcular()
+            calculate()
         }
     })
 }
@@ -80,9 +81,7 @@ export function handleDelete() {
 
 // Evento boton calcular
 export function handleCalculate() {
-    btnCalculate.addEventListener('click', () => {
-        calcular()
-    })
+    btnCalculate.addEventListener('click', calculate)
 }
 
 // Evento boton cancelar
