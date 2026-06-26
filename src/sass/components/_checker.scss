@@ -12,6 +12,7 @@
     }
 }
 
+// Estilos del checker - mobile first
 .checker {
     background: v.$color-checker-bg;
     border-radius: v.$border-radius-md;
@@ -19,24 +20,31 @@
     animation: revealUp 0.4s ease forwards;
     display: none;
     flex-direction: column;
-    gap: v.$spacing-xs;
+    gap: v.$spacing-sm;
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: v.$spacing-xs;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+    }
 
     &__title {
         color: v.$color-accent;
         font-size: 0.95rem;
-        margin: 0 0 v.$spacing-sm;
+        margin: 0 0 v.$spacing-xs;
     }
 
     &__display {
-        display: flex;
-        gap: v.$spacing-xs;
-        margin-bottom: 0.75rem;
-        flex-wrap: wrap;
+        width: 100%;
     }
 
     &__input {
-        flex: 1;
-        min-width: 140px;
+        width: 100%;
         padding: 0.6rem 0.75rem;
         border-radius: v.$border-radius-md;
         border: 2px solid v.$color-accent;
@@ -45,6 +53,7 @@
         font-size: 0.95rem;
         outline: none;
         transition: border-color 0.15s;
+        caret-color: v.$color-accent;
 
         &::placeholder {
             color: v.$color-text-disabled;
@@ -60,7 +69,6 @@
     &__actions {
         display: flex;
         gap: v.$spacing-xs;
-        flex-wrap: wrap;
     }
 
     &__btn {
@@ -71,10 +79,12 @@
         font-weight: bold;
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 0.4rem;
         transition: background 0.15s;
 
         &--calculate {
+            flex: 1;
             border: none;
             background: v.$color-accent;
             color: v.$color-background;
@@ -91,6 +101,7 @@
         }
 
         &--cancel {
+            flex: 1;
             border: 2px solid v.$color-cancel;
             background: transparent;
             color: v.$color-cancel;
@@ -108,15 +119,30 @@
         }
 
         &--restart {
+            width: 100%;
             border: 2px solid v.$color-accent;
             background: transparent;
             color: v.$color-accent;
-            padding: 0.6rem 1.4rem;
+            margin-top: v.$spacing-xs;
 
             &:hover {
                 background: v.$color-accent;
                 color: v.$color-background;
             }
+        }
+    }
+
+    // Desktop - dos columnas
+    @media (min-width: v.$breakpoint-tablet) {
+        flex-direction: row;
+
+        &__left {
+            flex: 1;
+        }
+
+        &__right {
+            flex: 1;
+            justify-content: center;
         }
     }
 }

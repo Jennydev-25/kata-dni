@@ -140,22 +140,27 @@ input {
   animation: revealUp 0.4s ease forwards;
   display: none;
   flex-direction: column;
+  gap: 1rem;
+}
+.checker__left {
+  display: flex;
+  flex-direction: column;
   gap: 0.5rem;
+}
+.checker__right {
+  display: flex;
+  flex-direction: column;
 }
 .checker__title {
   color: #F7DF1E;
   font-size: 0.95rem;
-  margin: 0 0 1rem;
+  margin: 0 0 0.5rem;
 }
 .checker__display {
-  display: flex;
-  gap: 0.5rem;
-  margin-bottom: 0.75rem;
-  flex-wrap: wrap;
+  width: 100%;
 }
 .checker__input {
-  flex: 1;
-  min-width: 140px;
+  width: 100%;
   padding: 0.6rem 0.75rem;
   border-radius: 8px;
   border: 2px solid #F7DF1E;
@@ -164,6 +169,7 @@ input {
   font-size: 0.95rem;
   outline: none;
   transition: border-color 0.15s;
+  caret-color: #F7DF1E;
 }
 .checker__input::placeholder {
   color: #555555;
@@ -176,7 +182,6 @@ input {
 .checker__actions {
   display: flex;
   gap: 0.5rem;
-  flex-wrap: wrap;
 }
 .checker__btn {
   padding: 0.6rem 1.1rem;
@@ -186,10 +191,12 @@ input {
   font-weight: bold;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.4rem;
   transition: background 0.15s;
 }
 .checker__btn--calculate {
+  flex: 1;
   border: none;
   background: #F7DF1E;
   color: #222222;
@@ -203,6 +210,7 @@ input {
   cursor: not-allowed;
 }
 .checker__btn--cancel {
+  flex: 1;
   border: 2px solid #ff4444;
   background: transparent;
   color: #ff4444;
@@ -217,14 +225,27 @@ input {
   cursor: not-allowed;
 }
 .checker__btn--restart {
+  width: 100%;
   border: 2px solid #F7DF1E;
   background: transparent;
   color: #F7DF1E;
-  padding: 0.6rem 1.4rem;
+  margin-top: 0.5rem;
 }
 .checker__btn--restart:hover {
   background: #F7DF1E;
   color: #222222;
+}
+@media (min-width: 768px) {
+  .checker {
+    flex-direction: row;
+  }
+  .checker__left {
+    flex: 1;
+  }
+  .checker__right {
+    flex: 1;
+    justify-content: center;
+  }
 }
 
 @keyframes popIn {
@@ -280,16 +301,17 @@ input {
 .result-box__chips {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.3rem;
   animation: fadeUp 0.3s 0.15s ease forwards;
   opacity: 0;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
+  width: 100%;
 }
 .result-box__chip {
   border-radius: 6px;
-  padding: 0.35rem 0.8rem;
-  font-size: 0.9rem;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.75rem;
   white-space: nowrap;
 }
 .result-box__chip--number {
@@ -312,12 +334,13 @@ input {
   background: #221a40;
   color: #a78bfa;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .result-box__placeholder {
-  font-size: 0.85rem;
-  color: #444444;
+  font-size: 0.9rem;
+  color: #bbbbbb;
   animation: fadeIn 0.3s ease forwards;
+  text-align: center;
 }
 .result-box__error {
   font-size: 0.95rem;
@@ -331,12 +354,12 @@ input {
 }
 .result-box__cancelled p {
   font-size: 1rem;
-  color: #888888;
+  color: #bbbbbb;
   margin: 0 0 0.35rem;
 }
 .result-box__cancelled span {
   font-size: 0.8rem;
-  color: #555555;
+  color: #999999;
 }
 
 .keypad {

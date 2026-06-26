@@ -246,7 +246,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `style`: add breakpoint variables
 - `style`: increase wrapper max-width for two column layout
 - `refactor`: add two column structure to checker section
-- 
+- `style`: add two column responsive layout to checker
 - 
 
 
