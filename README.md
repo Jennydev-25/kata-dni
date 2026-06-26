@@ -251,7 +251,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `style`: make calculate button outline style to match cancel button
 - `test`: add test for decimal number returns false in isValidRange
 - `feat`: add integer validation to isValidRange
-- 
+- `refactor`: simplify isValidRange to single return with integer check
 
 </details>
 
