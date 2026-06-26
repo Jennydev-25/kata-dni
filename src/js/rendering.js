@@ -1,7 +1,6 @@
 import { resultBox } from './htmlComponents.js'
 
-export function renderResult(letter, number) {
-    const remainder = number % 23
+export function renderResult(letter, number, remainder) {
     resultBox.innerHTML = `
         <span class="result-box__letter">${letter}</span>
         <div class="result-box__chips">

@@ -255,6 +255,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `fix`: add checker left and right columns to dom test mock
 - `refactor`: export ERROR_MESSAGE constant from service module
 - `refactor`: improve accessibility, rename calculate function and remove wrapper
+- `refactor`: pass remainder as parameter to renderResult to avoid recalculation
 
 </details>
 
