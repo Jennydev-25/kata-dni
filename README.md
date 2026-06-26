@@ -266,6 +266,7 @@ Estructura de archivos decidida antes de programar, siguiendo el patrón de modu
 - `docs`: add tests screenshot to README
 - `docs`: add app screenshots and GitHub Pages link to README
 - `docs`: resize tests screenshot in README
+- `feat`: add favicon to project
 
 </details>
 
